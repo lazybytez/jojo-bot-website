@@ -30,7 +30,7 @@ jobs:
           scope: '@lazybytez'
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2.2.4
         id: pnpm-install
         with:
           version: 7
@@ -76,7 +76,7 @@ jobs:
           scope: '@lazybytez'
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2.2.4
         id: pnpm-install
         with:
           version: 7
