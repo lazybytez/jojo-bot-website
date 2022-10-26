@@ -9,31 +9,34 @@
         </a>
         <nav class="flex items-center space-x-6 font-semibold">
             <a class="hover:text-rosewater" href="/commands">Commands</a>
-            <a class="">Public Servers<sup>(soon)</sup></a>
-            <a class="">Help<sup>(soon)</sup></a>
-            <a class="">Status<sup>(soon)</sup></a>
-            <a class="hover:text-rosewater" target="_blank" href="https://discord.gg/bcV6TN2k9V"
-                >Our Discord</a
+            <p>Public Servers<sup>(soon)</sup></p>
+            <p>Help<sup>(soon)</sup></p>
+            <p>Status<sup>(soon)</sup></p>
+            <a
+                class="hover:text-rosewater"
+                target="_blank"
+                href="https://discord.gg/bcV6TN2k9V"
+                rel="noopener noreferrer nofollow">Our Discord</a
             >
             <a
                 class="hover:text-rosewater"
                 target="_blank"
-                href="https://github.com/lazybytez/jojo-discord-bot">Contributing</a
+                href="https://github.com/lazybytez/jojo-discord-bot"
+                rel="noopener noreferrer nofollow">Contributing</a
             >
         </nav>
     </div>
-    <div>
+    <div class="flex items-center space-x-6">
         <a
-            class="pr-4 hover:text-rosewater"
+            class="hover:text-rosewater"
             href="https://discord.com/api/oauth2/authorize?client_id=597997684611219456&permissions=4398046511095&scope=bot%20applications.commands"
+            rel="noopener noreferrer nofollow"
         >
             Invite Bot
         </a>
-        <a
-            class="pr-4 hover:text-rosewater"
-        >
+        <p class="hover:text-rosewater" href="#">
             Dashboard<sup>(soon)</sup>
-        </a>
+        </p>
         <ThemeSwitcher />
     </div>
 </nav>
