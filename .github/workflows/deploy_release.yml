@@ -1,0 +1,37 @@
+# Continues deployment workflow to automatically
+# deploy the website
+name: Deploy Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  release:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [18]
+    environment:
+      name: Production
+    env:
+      IS_CI: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Mask hidden URLs
+        run: |
+          echo "::add-mask::${{ secrets.APP_URL }}"
+          echo "::add-mask::${{ secrets.SSH_URL }}"
+      - name: Do deployment
+        uses: dokku/github-action@master
+        with:
+          branch: main
+          git_push_flags: '--force'
+          git_remote_url: ${{ secrets.DEPLOYMENT_HOST }}
+          ssh_private_key: ${{ secrets.DEPLOYMENT_KEY }}
+          ssh_host_key: ${{ secrets.DEPLOYMENT_HOST_KEY }}
