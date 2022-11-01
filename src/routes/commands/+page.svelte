@@ -8,6 +8,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Commands | JoJo Bot</title>
+</svelte:head>
+
 <aside class="bg-surface-0 max-w-sm sm:ml-20 sm:my-20 rounded">
     <ul class="py-2 px-4">
         {#each data.components as comp}
