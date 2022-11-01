@@ -14,6 +14,7 @@
     on:change={() => switchTheme()}
 >
     <option value="">Dark</option>
-    <option value="light">Light</option>
-    <option value="grey">Grey</option>
+    <option value="theme-light">Light</option>
+    <option value="theme-gray">Gray</option>
+    <option value="theme-gray-alt">Alternative Gray</option>
 </select>
