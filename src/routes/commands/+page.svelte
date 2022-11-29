@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let data;
+    import type { ComponentData } from '$lib/types/BotComponents';
+    export let data: ComponentData;
 
     let active = data.components[0].name;
 
