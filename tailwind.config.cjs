@@ -44,5 +44,6 @@ module.exports = {
             mantle: 'rgba(var(--color-mantle), <alpha-value>)',
             crust: 'rgba(var(--color-crust), <alpha-value>)'
         }
-    }
+    },
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 };
