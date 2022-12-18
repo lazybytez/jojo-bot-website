@@ -1,4 +1,4 @@
-<script>
+<script class="ts">
     import ThemeSwitcher from '$lib/components/Theme/Switcher.svelte';
 </script>
 
