@@ -130,6 +130,18 @@
         @apply focus:text-rosewater;
     }
 
+    h1 {
+        @apply text-4xl;
+    }
+
+    h2 {
+        @apply text-3xl;
+    }
+
+    h3 {
+        @apply text-2xl;
+    }
+
     [type='checkbox']:checked {
         background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/></svg>');
     }
@@ -148,6 +160,35 @@
         -webkit-animation: InviteBotButton 3s ease infinite;
         -moz-animation: InviteBotButton 3s ease infinite;
         animation: InviteBotButton 3s ease infinite;
+    }
+
+    .line-after-h1:before {
+        @apply absolute;
+        @apply h-[2px];
+        @apply bg-lavender;
+        @apply content-[''];
+        @apply block;
+        @apply w-[2rem];
+        @apply top-[2.95rem];
+
+        /* lass mich in ruhe */
+        right: -4.5rem;
+    }
+
+    .dott-after-h1 {
+        position: relative;
+    }
+
+    .dott-after-h1:after {
+        @apply rounded;
+        @apply absolute;
+        @apply bg-lavender;
+        @apply block;
+        @apply w-2;
+        @apply h-2;
+        @apply -right-10;
+        @apply top-[2.75rem];
+        @apply content-[''];
     }
 
     @keyframes InviteBotButton {

@@ -2,7 +2,7 @@
     import ThemeSwitcher from '$lib/components/Theme/Switcher.svelte';
 </script>
 
-<nav class="bg-crust flex justify-between h-16 items-center px-8 shadow-lg">
+<nav class="bg-crust flex justify-between w-full h-16 items-center px-8 fixed shadow-lg z-50">
     <div class="flex space-x-6">
         <a href="/">
             <h1 class="font-bold text-4xl text-mauve">JoJo</h1>
