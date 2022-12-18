@@ -6,88 +6,158 @@
     Custom Color Themes | Base Theme is "Dark"
    ================================================= */
 :root {
-    --color-rosewater: #f5e0dc;
-    --color-flamingo: #f2cdcd;
-    --color-pink: #f5c2e7;
-    --color-mauve: #cba6f7;
-    --color-red: #f38ba8;
-    --color-maroon: #eba0ac;
-    --color-peach: #fab387;
-    --color-yellow: #f9e2af;
-    --color-green: #a6e3a1;
-    --color-teal: #94e2d5;
-    --color-sky: #89dceb;
-    --color-sapphire: #74c7ec;
-    --color-blue: #87b0f9;
-    --color-lavender: #b4befe;
-    --color-text: #c6d0f5;
-    --color-subtext1: #b3bcdf;
-    --color-subtext0: #a1a8c9;
-    --color-overlay2: #8e95b3;
-    --color-overlay1: #7b819d;
-    --color-overlay0: #696d86;
-    --color-surface2: #565970;
-    --color-surface1: #43465a;
-    --color-surface0: #313244;
-    --color-base: #1e1e2e;
-    --color-mantle: #181825;
-    --color-crust: #11111b;
+    --color-rosewater: 245, 224, 220;
+    --color-flamingo: 242, 205, 205;
+    --color-pink: 245, 194, 231;
+    --color-mauve: 203, 166, 247;
+    --color-red: 243, 139, 168;
+    --color-maroon: 235, 160, 172;
+    --color-peach: 250, 179, 135;
+    --color-yellow: 249, 226, 175;
+    --color-green: 166, 227, 161;
+    --color-teal: 148, 226, 213;
+    --color-sky: 137, 220, 235;
+    --color-sapphire: 116, 199, 236;
+    --color-blue: 135, 176, 249;
+    --color-lavender: 180, 190, 254;
+    --color-text: 198, 208, 245;
+    --color-subtext1: 179, 188, 223;
+    --color-subtext0: 161, 168, 201;
+    --color-overlay2: 142, 149, 179;
+    --color-overlay1: 123, 129, 157;
+    --color-overlay0: 105, 109, 134;
+    --color-surface2: 86, 89, 112;
+    --color-surface1: 67, 70, 90;
+    --color-surface0: 49, 50, 68;
+    --color-base: 30, 30, 46;
+    --color-mantle: 24, 24, 37;
+    --color-crust: 17, 17, 27;
 }
 
-.light {
-    --color-rosewater: #de9584;
-    --color-flamingo: #dd7878;
-    --color-pink: #ec83d0;
-    --color-mauve: #8839ef;
-    --color-red: #d20f39;
-    --color-maroon: #e64553;
-    --color-peach: #fe640b;
-    --color-yellow: #e49320;
-    --color-green: #40a02b;
-    --color-teal: #179299;
-    --color-sky: #04a5e5;
-    --color-sapphire: #209fb5;
-    --color-blue: #2a6ef5;
-    --color-lavender: #7287fd;
-    --color-text: #4c4f69;
-    --color-subtext1: #5c5f77;
-    --color-subtext0: #6c6f85;
-    --color-overlay2: #7c7f93;
-    --color-overlay1: #8c8fa1;
-    --color-overlay0: #9ca0b0;
-    --color-surface2: #acb0be;
-    --color-surface1: #bcc0cc;
-    --color-surface0: #ccd0da;
-    --color-base: #eff1f5;
-    --color-mantle: #e6e9ef;
-    --color-crust: #dce0e8;
+.theme-light {
+    --color-rosewater: 222, 149, 132;
+    --color-flamingo: 221, 120, 120;
+    --color-pink: 236, 131, 208;
+    --color-mauve: 136, 57, 239;
+    --color-red: 210, 15, 57;
+    --color-maroon: 230, 69, 83;
+    --color-peach: 254, 100, 11;
+    --color-yellow: 228, 147, 32;
+    --color-green: 64, 160, 43;
+    --color-teal: 23, 146, 153;
+    --color-sky: 4, 165, 229;
+    --color-sapphire: 32, 159, 181;
+    --color-blue: 42, 110, 245;
+    --color-lavender: 114, 135, 253;
+    --color-text: 76, 79, 105;
+    --color-subtext1: 92, 95, 119;
+    --color-subtext0: 108, 111, 133;
+    --color-overlay2: 124, 127, 147;
+    --color-overlay1: 140, 143, 161;
+    --color-overlay0: 156, 160, 176;
+    --color-surface2: 172, 176, 190;
+    --color-surface1: 188, 192, 204;
+    --color-surface0: 204, 208, 218;
+    --color-base: 239, 241, 245;
+    --color-mantle: 230, 233, 239;
+    --color-crust: 220, 224, 232;
 }
 
-.grey {
-    --color-rosewater: #f2d5cf;
-    --color-flamingo: #eebebe;
-    --color-pink: #f4b8e4;
-    --color-mauve: #ca9ee6;
-    --color-red: #e78284;
-    --color-maroon: #ea999c;
-    --color-peach: #ef9f76;
-    --color-yellow: #e5c890;
-    --color-green: #a6d189;
-    --color-teal: #81c8be;
-    --color-sky: #99d1db;
-    --color-sapphire: #85c1dc;
-    --color-blue: #8caaee;
-    --color-lavender: #babbf1;
-    --color-text: #c6ceef;
-    --color-subtext1: #b5bddc;
-    --color-subtext0: #a5acc9;
-    --color-overlay2: #949bb7;
-    --color-overlay1: #838aa4;
-    --color-overlay0: #737891;
-    --color-surface2: #62677e;
-    --color-surface1: #51566c;
-    --color-surface0: #414559;
-    --color-base: #303446;
-    --color-mantle: #292c3c;
-    --color-crust: #232634;
+.theme-gray {
+    --color-rosewater: 242, 213, 207;
+    --color-flamingo: 238, 190, 190;
+    --color-pink: 244, 184, 228;
+    --color-mauve: 202, 158, 230;
+    --color-red: 231, 130, 132;
+    --color-maroon: 234, 153, 156;
+    --color-peach: 239, 159, 118;
+    --color-yellow: 229, 200, 144;
+    --color-green: 166, 209, 137;
+    --color-teal: 129, 200, 190;
+    --color-sky: 153, 209, 219;
+    --color-sapphire: 133, 193, 220;
+    --color-blue: 140, 170, 238;
+    --color-lavender: 186, 187, 241;
+    --color-text: 198, 206, 239;
+    --color-subtext1: 181, 189, 220;
+    --color-subtext0: 165, 172, 201;
+    --color-overlay2: 148, 155, 183;
+    --color-overlay1: 131, 138, 164;
+    --color-overlay0: 115, 120, 145;
+    --color-surface2: 98, 103, 126;
+    --color-surface1: 81, 86, 108;
+    --color-surface0: 65, 69, 89;
+    --color-base: 48, 52, 70;
+    --color-mantle: 41, 44, 60;
+    --color-crust: 35, 38, 52;
+}
+
+.theme-gray-alt {
+    --color-rosewater: 244, 219, 214;
+    --color-flamingo: 240, 198, 198;
+    --color-pink: 245, 189, 230;
+    --color-mauve: 198, 160, 246;
+    --color-red: 237, 135, 150;
+    --color-maroon: 238, 153, 160;
+    --color-peach: 245, 169, 127;
+    --color-yellow: 238, 212, 159;
+    --color-green: 166, 218, 149;
+    --color-teal: 139, 213, 202;
+    --color-sky: 145, 215, 227;
+    --color-sapphire: 125, 196, 228;
+    --color-blue: 138, 173, 244;
+    --color-lavender: 183, 189, 248;
+    --color-text: 197, 207, 245;
+    --color-subtext1: 179, 188, 224;
+    --color-subtext0: 161, 170, 203;
+    --color-overlay2: 143, 151, 183;
+    --color-overlay1: 125, 132, 162;
+    --color-overlay0: 108, 114, 141;
+    --color-surface2: 90, 95, 120;
+    --color-surface1: 72, 76, 100;
+    --color-surface0: 54, 58, 79;
+    --color-base: 36, 39, 58;
+    --color-mantle: 30, 32, 48;
+    --color-crust: 24, 25, 38;
+}
+
+/* =================================================
+    Extended Tailwind base styles
+   ================================================= */
+@layer base {
+    a {
+        @apply hover:text-rosewater;
+        @apply focus:text-rosewater;
+    }
+
+    [type='checkbox']:checked {
+        background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/></svg>');
+    }
+}
+
+/* =================================================
+    Extended Tailwind component styles
+   ================================================= */
+@layer component {
+    /* =================================================
+       Invite Bot | Button Animation
+       ================================================= */
+    .invite-bot-button-animate {
+        background-size: 400%;
+
+        -webkit-animation: InviteBotButton 3s ease infinite;
+        -moz-animation: InviteBotButton 3s ease infinite;
+        animation: InviteBotButton 3s ease infinite;
+    }
+
+    @keyframes InviteBotButton {
+        0%,
+        100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+    }
 }

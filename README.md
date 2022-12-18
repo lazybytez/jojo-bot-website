@@ -2,7 +2,6 @@
 
 [![gh-commit-badge][gh-commit-badge]][gh-commit]
 [![gh-contributors-badge][gh-contributors-badge]][gh-contributors]
-[![gh-stars-badge][gh-stars-badge]][gh-stars]
 
 ## Description
 
@@ -96,8 +95,6 @@ the [How to Contribute][gh-contribute] document.
 [gh-commit]: https://github.com/lazybytez/jojo-bot-website/commits/main
 [gh-contributors-badge]: https://img.shields.io/github/contributors/lazybytez/jojo-bot-website?style=for-the-badge&colorA=302D41&colorB=89dceb
 [gh-contributors]: https://github.com/lazybytez/jojo-bot-website/graphs/contributors
-[gh-stars-badge]: https://img.shields.io/github/stars/lazybytez/jojo-bot-website?style=for-the-badge&colorA=302D41&colorB=f9e2af
-[gh-stars]: https://github.com/lazybytez/jojo-bot-website/stargazers
 [gh-contribute]: https://github.com/lazybytez/.github/blob/main/docs/CONTRIBUTING.md
 [gh-license]: https://github.com/lazybytez/jojo-bot-website/blob/main/LICENSE
 [gh-codeofconduct]: https://github.com/lazybytez/.github/blob/main/docs/CODE_OF_CONDUCT.md

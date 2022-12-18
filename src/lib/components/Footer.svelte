@@ -1,3 +1,3 @@
-<footer class="bg-mantle">
-    <h1>Footer goes here</h1>
+<footer class="bg-mantle h-12">
+    <span>Footer goes here</span>
 </footer>
