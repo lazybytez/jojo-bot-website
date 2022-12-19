@@ -18,30 +18,75 @@
 </main> -->
 <script lang="ts">
     import Article from "$lib/components/Article.svelte";
+    import stockImage from '$lib/assets/images/stock-image.jpg';
+
 </script>
+<style>
+
+    .vertical-line--home:before {
+        @apply line-base;
+        @apply bg-lavender;
+        @apply mt-[3.5rem];
+        @apply w-[2px];
+        @apply left-auto;
+        margin-left: calc(50vw - 6.05rem);
+        height: calc(100% + 10rem);
+    }
+
+    .line-behind-home-title:before {
+        @apply line-base;
+        @apply bg-lavender;
+        @apply h-[2px];
+        @apply w-[2rem];
+        @apply top-[1rem];
+
+        /* lass mich in ruhe */
+        right: -4.5rem;
+    }
+
+    .dott-behind-home-title {
+        position: relative;
+    }
+
+    .dott-behind-home-title:after {
+        @apply line-base;
+        @apply bg-lavender;
+        @apply rounded;
+        @apply w-2;
+        @apply h-2;
+        @apply -right-10;
+        @apply top-[1rem];
+
+        /* the half of the dott itselfe + 1px (again the half of its size)*/
+        transform: translateY(calc(-50% + 1px));
+    }
+</style>
 <main>
     <Article>
-            <!-- Left -->
-            <div slot="left" id="intro" class="text-right pr-40 h-full flex justify-center items-end flex-col">
-                <h1 class="text-6xl dott-after-h1 line-after-h1">JoJo's <i>bizar</i> <br /> <sup>discord Bot</sup></h1>
+        <!-- Left -->
+        <div slot="left" id="intro" class="relative text-right h-full flex justify-center items-end flex-col">
+            <!-- for the vertical line -> wrapper -->
+            <div class="vertical-line--home pr-40 w-full ">
+                <h1 class="text-6xl dott-behind-home-title line-behind-home-title before:mt-[2.5rem] after:mt-[2.5rem] ">JoJo's <i>bizarre</i> <br /> <sup>discord Bot</sup></h1>
                 <p>some cool description,</p>
-                <p>Used on: <a>guild-number%</a> Servers</p>
+                <p>Used on: <a class="italic" href="https://google.de/">%guild-number%</a> Servers</p>
             </div>
+        </div>
 
-            <!-- Right -->
-            <div slot="right">
-                <img class="object-cover h-screen" alt="" src="https://media.discordapp.net/attachments/1025140816936697918/1025143871451177110/unknown.png?width=736&height=702" />
-            </div>
+        <!-- Right -->
+        <div slot="right">
+            <img class="object-cover h-screen" alt="" src="{stockImage}" />
+        </div>
     </Article>
     <Article>
-            <!-- Left -->
-            <div slot="left" id="second" class="p-40 pt-40 text-right">
-                <h2>Discord bot cool weil! </h2>
-            </div>
+        <!-- Left -->
+        <div slot="left" id="second" class="p-40 pt-40 text-right">
+            <h2 class="dott-behind-home-title line-behind-home-title ">Discord bot cool weil! </h2>
+        </div>
 
-            <!-- Right -->
-            <div slot="right" class="p-20 pt-40">
-                <p>hier wirklich cool weil sehr langer text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
-            </div>
+        <!-- Right -->
+        <div slot="right" class="p-20 pt-40">
+            <p>hier wirklich cool weil sehr langer text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+        </div>
     </Article>
 </main>

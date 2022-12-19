@@ -1,3 +1,5 @@
+@config "../tailwind.config.cjs";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -162,34 +164,7 @@
         animation: InviteBotButton 3s ease infinite;
     }
 
-    .line-after-h1:before {
-        @apply absolute;
-        @apply h-[2px];
-        @apply bg-lavender;
-        @apply content-[''];
-        @apply block;
-        @apply w-[2rem];
-        @apply top-[2.95rem];
 
-        /* lass mich in ruhe */
-        right: -4.5rem;
-    }
-
-    .dott-after-h1 {
-        position: relative;
-    }
-
-    .dott-after-h1:after {
-        @apply rounded;
-        @apply absolute;
-        @apply bg-lavender;
-        @apply block;
-        @apply w-2;
-        @apply h-2;
-        @apply -right-10;
-        @apply top-[2.75rem];
-        @apply content-[''];
-    }
 
     @keyframes InviteBotButton {
         0%,
