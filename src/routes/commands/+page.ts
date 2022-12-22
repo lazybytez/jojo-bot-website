@@ -40,7 +40,18 @@ export async function load() {
                     usage: 'test'
                 }
             ]
-        }
+        },
+        {
+            name: 'Dice',
+            description: 'This Component shows bot a number.',
+            commands: [
+                {
+                    name: 'dice',
+                    description: 'test',
+                    usage: 'dicing'
+                }
+            ]
+        },
     ];
 
     return {

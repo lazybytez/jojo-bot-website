@@ -1,3 +1,7 @@
+const { collapseTextChangeRangesAcrossMultipleVersions } = require('typescript');
+const lineBasePlugin = require('tailwindcss/plugin')
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -45,5 +49,17 @@ module.exports = {
             crust: 'rgba(var(--color-crust), <alpha-value>)'
         }
     },
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        lineBasePlugin(function ({ addComponents, theme}) {
+            addComponents({
+                '.line-base': {
+                    position: "absolute",
+                    display: "block",
+                    content: '\'\''
+                }
+            })
+        })
+    ]
 };
