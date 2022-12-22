@@ -21,8 +21,8 @@
     import stockImage from '$lib/assets/images/stock-image.jpg';
 
 </script>
-<style>
 
+<style>
     .vertical-line--home:before {
         @apply line-base;
         @apply bg-lavender;
@@ -70,6 +70,13 @@
                 <h1 class="text-6xl dott-behind-home-title line-behind-home-title before:mt-[2.5rem] after:mt-[2.5rem] ">JoJo's <i>bizarre</i> <br /> <sup>discord Bot</sup></h1>
                 <p>some cool description,</p>
                 <p>Used on: <a class="italic" href="https://google.de/">%guild-number%</a> Servers</p>
+                <ul class="actions">
+                    <li>
+                        <a href="#second">
+                            <span class="label hidden">next</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 

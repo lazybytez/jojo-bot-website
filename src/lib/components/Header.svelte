@@ -13,6 +13,7 @@
                 class="hidden lg:block"
                 href="https://discord.com/api/oauth2/authorize?client_id=597997684611219456&permissions=4398046511095&scope=bot%20applications.commands"
                 rel="noopener noreferrer nofollow"
+                target="_blank"
             >
                 Invite Bot
             </a>
